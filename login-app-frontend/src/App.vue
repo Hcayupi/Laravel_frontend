@@ -1,33 +1,21 @@
 <script lang="ts">
-import { defineComponent } from "vue";
-import TheWelcome from "./components/TheWelcome.vue";
+import Login from "./components/Login.vue";
 
-export default defineComponent({
+export default {
   name: "App",
   components: {
-    TheWelcome,
+    Login,
   },
-  setup() {
-    return {};
-  },
-});
+};
 </script>
 
-
 <template>
-  <header>
-    <div id="app">
-      <h1>¡Hola, Vue con TypeScript!</h1>
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <Login />
   </main>
 </template>
 
-<style scoped>
-h1 {
-  color: teal;
-}
+<style>
+/* Estilos globales, si es necesario */
 </style>
+
